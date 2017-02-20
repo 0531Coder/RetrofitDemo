@@ -16,7 +16,7 @@ public interface AddressApi {
 
     //获取地区列表
     @FormUrlEncoded
-    @POST("farm/areaList")
+    @POST("v3/farm/areaList")
     Observable<AreaResponse> getAreaList(@Field("userToken") String UserToken, @Field("parentId") String parentId);
 
     //豆瓣Api
